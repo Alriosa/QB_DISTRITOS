@@ -1,0 +1,16 @@
+program QB_DISTRITO;
+
+uses
+  Vcl.Forms,
+  qbdistritos in 'qbdistritos.pas' {Form1},
+  FrmDivisiones01 in 'FrmDivisiones01.pas' {FormDivisiones01};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormDivisiones01, FormDivisiones01);
+  Application.Run;
+end.
